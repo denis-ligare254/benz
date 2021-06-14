@@ -13,8 +13,8 @@ global variable used
     --clr-primary:rgb(87, 63, 110);
     --clr-primarylight:rgb(66, 66, 100);
     --clr-gray-1:rgb(13, 104, 121);
-    --clr-gray-5:#617d98;
-    --clr-gray-10:#f1f5f8;
+    --clr-gray-5:#c2cfdb;
+    --clr-gray-10:#f8fafc;
     --clr-white:#fff;
     --ff-primary:"Catamaran",sans-serif;
     --ff-secondary:"Grand Hotel",cursive;
@@ -115,7 +115,7 @@ header
     position: relative;
     /* animation: ; */
     overflow-x: hidden;
-    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("https://images.pexels.com/photos/112460/pexels-photo-112460.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940") center/cover no-repeat fixed;
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("https://images.pexels.com/photos/241316/pexels-photo-241316.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940") center/cover no-repeat fixed;
 }
 .banner{
     text-align: center;
@@ -142,4 +142,39 @@ header
     outline-offset: 0.25rem ;
     font-size: 1.25rem;
     padding: 1rem 1.75rem;
+}
+/* content divider */
+.content-divider{
+    height:0.5rem;
+    background-color: linear-gradient(to left,var(--clr-white),#e6e6e6,var(--clr-gray-1));
+}
+.skills{
+    background-color: var(--clr-gray-5);
+}
+.skill{
+    text-align: center;
+    padding: 0.25rem 0;
+    transition:var(--transition);
+}
+.skill-icon{
+    font-size: 2.5rem;
+    margin-bottom: 1.25rem;
+    /* transition: var(--transition); */
+    color: yellowgreen;
+    display: inline-block;
+}
+.skill-text{
+    max-width: 17rem;
+    color: var(--clr-gray-10);
+    margin: 0 auto;
+}
+.skill-text:hover{
+    color:#040405 ;
+}
+.skill:hover{
+    background-color: var(--clr-white);
+    box-shadow:0 2px var(--clr-primary);
+}
+.skill:hover,.skill-icon{
+    transform: translateY(-5px);
 }
