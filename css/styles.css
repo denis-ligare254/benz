@@ -14,6 +14,7 @@ global variable used
     --clr-primarylight:rgb(66, 66, 100);
     --clr-gray-1:rgb(13, 104, 121);
     --clr-gray-5:#c2cfdb;
+    --clr-maing-ray:gray;
     --clr-gray-10:#f8fafc;
     --clr-white:#fff;
     --ff-primary:"Catamaran",sans-serif;
@@ -105,6 +106,11 @@ p{
     color: var(--ff-primary);
     background:var(--clr-primarylight);
 }
+.clearfix::after,.clearfix::before{
+    content:'';
+    clear: both;
+    display: table;
+}
 /* 
 ==================
 header
@@ -165,7 +171,7 @@ header
 }
 .skill-text{
     max-width: 17rem;
-    color: var(--clr-gray-10);
+    color: var(--clr-maing-ray);
     margin: 0 auto;
 }
 .skill-text:hover{
@@ -177,4 +183,17 @@ header
 }
 .skill:hover,.skill-icon{
     transform: translateY(-5px);
+}
+
+@media screen and (min-width:576px){
+    .skill{
+        float:left;
+        width:50%;
+    }
+}
+
+@media screen and (min-width:1200px){
+    .skill{
+        width:25%;
+    }
 }
